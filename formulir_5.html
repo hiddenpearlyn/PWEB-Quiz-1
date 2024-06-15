@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagian III: Pengalaman Jabatan / Pekerjaan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .form-row div {
+            flex: 1;
+        }
+        button {
+            padding: 10px;
+            background: #7700ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #4e00b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Bagian III: Pengalaman Jabatan / Pekerjaan</h2>
+        <form>
+            <label for="jabatan">Nama Jabatan:</label>
+            <input type="text" id="jabatan" name="jabatan" required>
+
+            <div class="form-row">
+                <div>
+                    <label for="eselon">Eselon:</label>
+                    <input type="text" id="eselon" name="eselon">
+                </div>
+                <div>
+                    <label for="tmt_jabatan">TMT Jabatan:</label>
+                    <input type="date" id="tmt_jabatan" name="tmt_jabatan" required>
+                </div>
+            </div>
+
+            <label for="pejabat_jabatan">Pejabat Yang Mengesahkan:</label>
+            <input type="text" id="pejabat_jabatan" name="pejabat_jabatan" required>
+
+            <label for="unit_kerja">Unit Kerja:</label>
+            <input type="text" id="unit_kerja" name="unit_kerja" required>
+
+            <label for="keterangan_jabatan">Keterangan:</label>
+            <textarea id="keterangan_jabatan" name="keterangan_jabatan" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

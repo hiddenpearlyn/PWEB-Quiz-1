@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bagian I: Keterangan Perorangan</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+        color: #333;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin: 10px 0 5px;
+        font-weight: bold;
+      }
+      input,
+      select {
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+      }
+      .gender,
+      .status {
+        display: flex;
+        gap: 10px;
+      }
+      .form-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+      }
+      .form-row div {
+        flex: 1;
+      }
+      button {
+        padding: 10px;
+        background: #7700ff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #4e00b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Bagian I: Keterangan Perorangan</h2>
+      <form>
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="nip">N.I.P:</label>
+        <input type="text" id="nip" name="nip" required />
+
+        <label for="pangkat">Pangkat dan Golongan Ruang:</label>
+        <input type="text" id="pangkat" name="pangkat" required />
+
+        <label for="tempat_lahir">Tempat Lahir:</label>
+        <input type="text" id="tempat_lahir" name="tempat_lahir" required />
+
+        <label for="tgl_lahir">Tanggal Lahir:</label>
+        <input type="date" id="tgl_lahir" name="tgl_lahir" required />
+
+        <div class="gender">
+          <label>Jenis Kelamin:</label>
+          <input type="radio" id="pria" name="jenis_kelamin" value="pria" />
+          <label for="pria">Pria</label>
+          <input type="radio" id="wanita" name="jenis_kelamin" value="wanita" />
+          <label for="wanita">Wanita</label>
+        </div>
+
+        <label for="agama">Agama:</label>
+        <input type="text" id="agama" name="agama" required />
+
+        <div class="status">
+          <label>Status Perkawinan:</label>
+          <input
+            type="radio"
+            id="belum_kawin"
+            name="status_perkawinan"
+            value="belum_kawin"
+          />
+          <label for="belum_kawin">Belum Kawin</label>
+          <input
+            type="radio"
+            id="kawin"
+            name="status_perkawinan"
+            value="kawin"
+          />
+          <label for="kawin">Kawin</label>
+          <input
+            type="radio"
+            id="janda_duda"
+            name="status_perkawinan"
+            value="janda_duda"
+          />
+          <label for="janda_duda">Janda/Duda</label>
+        </div>
+
+        <label>Alamat Rumah:</label>
+        <div class="form-row">
+          <div>
+            <label for="jalan">Jalan:</label>
+            <input type="text" id="jalan" name="jalan" required />
+          </div>
+          <div>
+            <label for="kelurahan">Kelurahan/Desa:</label>
+            <input type="text" id="kelurahan" name="kelurahan" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="kecamatan">Kecamatan:</label>
+            <input type="text" id="kecamatan" name="kecamatan" required />
+          </div>
+          <div>
+            <label for="kota">Kabupaten/Kota:</label>
+            <input type="text" id="kota" name="kota" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="provinsi">Provinsi:</label>
+            <input type="text" id="provinsi" name="provinsi" required />
+          </div>
+        </div>
+
+        <label>Keterangan Badan:</label>
+        <div class="form-row">
+          <div>
+            <label for="tinggi">Tinggi (cm):</label>
+            <input type="number" id="tinggi" name="tinggi" required />
+          </div>
+          <div>
+            <label for="berat">Berat Badan (kg):</label>
+            <input type="number" id="berat" name="berat" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="rambut">Rambut:</label>
+            <input type="text" id="rambut" name="rambut" required />
+          </div>
+          <div>
+            <label for="bentuk_muka">Bentuk Muka:</label>
+            <input type="text" id="bentuk_muka" name="bentuk_muka" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div>
+            <label for="warna_kulit">Warna Kulit:</label>
+            <input type="text" id="warna_kulit" name="warna_kulit" required />
+          </div>
+          <div>
+            <label for="ciri_khas">Ciri Khas:</label>
+            <input type="text" id="ciri_khas" name="ciri_khas" required />
+          </div>
+          <div>
+            <label for="cacat_tubuh">Cacat Tubuh:</label>
+            <input type="text" id="cacat_tubuh" name="cacat_tubuh" />
+          </div>
+        </div>
+
+        <label for="hobby">Kegemaran (Hobby):</label>
+        <input type="text" id="hobby" name="hobby" />
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
